@@ -168,7 +168,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-outline-secondary mt-auto w-100">
+              <button class="btn btn-outline-secondary mt-3 w-100">
                 Download Transcript
               </button>
             </div>
@@ -180,6 +180,228 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="bg-white border rounded-3 p-4 p-md-5">
+            <h2 class="fw-bold"
+            >Course Registration & Audit</h2>
+
+            <p class="text-secondary">
+              Please complete the configuration profile below to assign student groups and resources.
+            </p>
+            
+            <hr>
+
+            <form>
+              <fieldset class="border rounded-2 p-3 mb-4">
+                <legend class="float-none w-auto px-2 text-primary fw-bold">
+                  Personal Information
+                </legend>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">
+                      Full Name
+                    </label>
+
+                    <input 
+                      type="text"
+                      class="form-control"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="John Doe">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="johndoe@university.edu">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="securityToken" class="form-label">
+                      Security Token
+                    </label>
+
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="securityToken"
+                      name="securityToken"
+                      placeholder="Enter your password">
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <label for="enrollmentDate" class="form-label">
+                      Enrollment Term Date
+                    </label>
+
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="enrollmentDate"
+                      name="enrollmentDate">
+                  </div>
+
+                </div>
+              </fieldset>
+
+
+              <fieldset class="border rounded-2 p-3 mb-4">
+
+                <legend class="float-none w-auto px-2 text-primary fw-bold">
+                  Course Preferences
+                </legend>
+
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+                  
+                
+
+                    <label for="developmentTrack" class="form-label">
+                      Primary Development Track
+                    </label>
+
+                    <select class="form-select" id="developmentTrack" name="developmentTrack">
+                      <option selected disabled value="">
+                        Choose a pathway...
+                      </option>
+
+                      <option value="frontend">Frontend Architecture (HTML/CSS/Bootstrap)</option>
+                      <option value="backend">Backend Engineering (Node.js/Python)</option>
+                      <option value="fullstack">Full-Stack Advanced Applications</option>
+
+                    </select>
+                  </div>
+                
+
+                
+                    <div class="col-md-6">
+                      <p class="form-label">
+                        Prior UI Framework Experience
+                      </p>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="frameworkExperience"
+                          id="beginner"
+                          value="beginner">
+                        
+                        <label class="form-check-label" for="beginner">
+                          None
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="frameworkExperience"
+                          id="intermediate"
+                          value="intermediate">
+                        
+                        <label class="form-check-label" for="intermediate">
+                          Some (1-2 Projects)
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="frameworkExperience"
+                          id="advanced"
+                          value="advanced">
+                        
+                        <label class="form-check-label" for="advanced">
+                          Advanced
+                        </label>
+                      </div>
+
+                  
+                    </div>
+
+                    </div>
+
+
+                <div class="row g-3">
+                  <div class="col-12">
+
+                    <label class="form-label" for="academicGoals">
+                        Statement of Academic Goals
+                    </label>
+
+                    <textarea
+                      class="form-control"
+                      id="academicGoals"
+                      name="academicGoals"
+                      rows="4"
+                      placeholder="Briefly specify what you intend to build with Bootstrap layout engines..."></textarea>
+
+
+                  </div>
+                </div>
+
+
+                <div class="form-check form-switch">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="communityUpdates"
+                      name="communityUpdates"
+                      role="switch"
+                      checked>
+                  
+
+
+
+
+                  <label class="form-check-label" for="communityUpdates">
+                      Subscribe to community lab updates and framework patch notes
+                  </label>
+                </div>
+
+
+              </fieldset>
+
+              <div class="d-flex justify-content-end gap-2">
+                <button type="reset" class="btn btn-outline-danger">
+                  Reset Form
+                </button>
+
+                <button type="submit" class="btn btn-success">
+                  Submit Registration
+                </button>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-secondary py-3 mt-4">
+    <div class="container text-center">
+      <small>© 2026 EduPortal. Built as a pedagogical example for responsive CSS grids.</small>
+    </div>
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
